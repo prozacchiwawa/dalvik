@@ -32,9 +32,6 @@ import Dalvik.Types
 
 type Str = Builder
 
-instance IsString Builder where
-  fromString = B.string7
-
 (+++) :: (Monoid s) => s -> s -> s
 (+++) = mappend
 {-# INLINE (+++) #-}
